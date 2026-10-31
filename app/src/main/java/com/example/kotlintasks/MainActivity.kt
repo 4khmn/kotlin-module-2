@@ -39,20 +39,11 @@ import com.example.kotlintasks.ui.theme.KotlinTasksTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            KotlinTasksTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Task3Screen()
-                }
-            }
+            ShoppingCartScreen()
         }
     }
 }
-
 @Composable
 fun Hello(name: String?) {
     val displayText = if (name != null) {
